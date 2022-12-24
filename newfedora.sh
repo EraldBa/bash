@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # For redhat linux systems
-function success{
+function success() {
     echo "Installed $1 successfully!"
 }
 
