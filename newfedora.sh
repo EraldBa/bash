@@ -47,6 +47,8 @@ success "VS Code"
 # wait
 
 # Here come the flatpaks
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+wait
 sudo flatpak update
 wait
 echo "Updated flatpaks successfully!"
@@ -58,9 +60,9 @@ success "flatpaks"
 install_path = "/home/erald/Documents/Install/"
 config_path = "/home/erald/.config/"
 
-mv "$install_path+kitty.conf"  "$config_path+kitty/kitty.conf"
-mv "$install_path+config.fish"  "$config_path+fish/config.fish"
-mv "$install_path+config.conf"  "$config_path+neofetch/config.conf"
+mv "${install_path}kitty.conf"  "${config_path}kitty/kitty.conf"
+mv "${install_path}config.fish"  "${config_path}fish/config.fish"
+mv "${install_path}config.conf"  "${config_path}neofetch/config.conf"
 
 echo "Moved all configs!"
 
