@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # For redhat linux systems
 GREEN='\033[0;32m'
-
+RESET='\033[0m'
 function success() {
-    printf "\n\n${GREEN}Installed $1 successfully!\n\n"
+    printf "\n\n${GREEN}Installed $1 successfully!${RESET}\n\n"
 }
 
 
